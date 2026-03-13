@@ -1,198 +1,156 @@
 body{
 
 font-family:'Inter', sans-serif;
-
 margin:0;
-
 background:#f6f2ed;
-
 color:#3b2f2f;
-
 line-height:1.7;
 
 }
 
-
+/* HEADER */
 
 header{
 
 background:#4b3621;
-
 color:white;
-
 padding:80px 20px;
 
 }
 
-
-
 .hero{
 
 max-width:900px;
-
 margin:auto;
-
 display:flex;
-
 align-items:center;
-
 justify-content:space-between;
-
 flex-wrap:wrap;
-
 gap:40px;
 
 }
 
-
-
 .profile{
 
 width:150px;
-
 height:150px;
-
 border-radius:50%;
-
 object-fit:cover;
-
 border:5px solid #e8dfd5;
 
 }
 
-
+/* TEXT */
 
 h1{
 
 font-family:'Playfair Display', serif;
-
 font-size:46px;
+margin-bottom:10px;
 
 }
-
-
 
 .subtitle{
 
 font-size:18px;
-
 opacity:0.9;
 
 }
 
-
+/* BUTTON */
 
 .btn{
 
 background:#e8dfd5;
-
 padding:10px 20px;
-
 border-radius:6px;
-
 text-decoration:none;
-
 color:#4b3621;
-
 font-weight:500;
+display:inline-block;
+margin-top:15px;
+transition:0.2s;
 
 }
 
+.btn:hover{
 
+background:white;
+
+}
+
+/* MAIN CONTAINER */
 
 .container{
 
 max-width:900px;
-
 margin:auto;
-
 padding:40px 20px;
 
 }
 
-
+/* SECTION */
 
 .section{
 
 margin-bottom:60px;
-
 border-left:3px solid #e2d7c9;
-
 padding-left:20px;
 
 }
-
-
 
 .section-title{
 
 font-family:'Playfair Display', serif;
-
 font-size:28px;
-
 margin-bottom:20px;
 
 }
 
-
+/* EDUCATION */
 
 .education{
 
 display:flex;
-
 align-items:center;
-
 gap:20px;
 
 }
 
-
-
 .edu-logo{
 
 width:70px;
+height:auto;
 
 }
 
-
+/* TIMELINE */
 
 .timeline{
 
 position:relative;
-
 padding-left:20px;
 
 }
 
-
-
 .timeline-item{
 
 margin-bottom:30px;
+position:relative;
 
 }
-
-
 
 .timeline-dot{
 
 width:12px;
-
 height:12px;
-
 background:#4b3621;
-
 border-radius:50%;
-
 position:absolute;
-
-margin-left:-26px;
-
-margin-top:8px;
+left:-26px;
+top:8px;
 
 }
-
-
 
 .timeline-content{
 
@@ -200,17 +158,14 @@ margin-left:10px;
 
 }
 
-
-
 .date{
 
 font-size:14px;
-
 color:#7a6a58;
 
 }
 
-
+/* SKILLS */
 
 .skill{
 
@@ -218,40 +173,71 @@ margin-bottom:15px;
 
 }
 
-
-
 .bar{
 
 width:100%;
-
 height:8px;
-
 background:#ddd;
-
 border-radius:5px;
+overflow:hidden;
 
 }
-
-
 
 .fill{
 
 height:8px;
-
 background:#4b3621;
-
 border-radius:5px;
 
 }
 
+/* CONTACT */
 
+.contact p{
+
+margin:10px 0;
+
+}
+
+.contact a{
+
+color:#4b3621;
+text-decoration:none;
+font-weight:500;
+
+}
+
+.contact a:hover{
+
+text-decoration:underline;
+
+}
+
+/* FOOTER */
 
 footer{
 
 text-align:center;
-
 padding:40px;
-
 background:#e8dfd5;
+
+}
+
+/* RESPONSIVE */
+
+@media (max-width:700px){
+
+.hero{
+
+flex-direction:column;
+text-align:center;
+
+}
+
+.profile{
+
+margin-top:20px;
+
+}
 
 }
